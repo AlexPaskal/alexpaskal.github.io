@@ -6,6 +6,6 @@
 	</head>
 	<body>
 		Hello! My name is Alex Paskal. Welcome!
-		<&php echo "Hello world!" ?>
+		<?php echo "Hello world!" ?>
 	</body>
 </html>
