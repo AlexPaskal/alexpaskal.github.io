@@ -3,23 +3,15 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>AlexPaskal's site</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-        <script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
+        <script src="index/js/lib/angular.min.js"></script>
+        <script src="index/js/lib/jquery-3.0.0.min.js"></script>
     </head>
 	<body ng-controller="AppCtrl">
         <script>
-            //$.ajax({
-            //    url: "index/db.json",
-            //    success: function (data) {
-            //        var obj = JSON.parse(data);
-            //        alert(obj.key1);
-            //    }
-            //});
             $.getJSON("index/db.json", function (data) {
                 console.log(data);
                 console.log(data.key1);
                 alert(data.key1);
-                // data is a JavaScript object now. Handle it as such
 
             });
         </script>
