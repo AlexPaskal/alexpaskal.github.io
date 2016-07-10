@@ -3,36 +3,20 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>AlexPaskal's site</title>
-        <script src="index/js/lib/angular.min.js"></script>
-        <script src="index/js/lib/jquery-3.0.0.min.js"></script>
-        <script src="index/js/lib/taffy.min.js"></script>
+        <!-- AngularJS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+        <!-- Firebase -->
+        <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+        <!-- AngularFire -->
+        <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
     </head>
 	<body>
         <div ng-controller="AppCtrl">
-            {{he}} <br />
-            {{text}} <br />
-            Hello! My name is Alex Paskal. Welcome! <span id="span1"></span>
-            <form id="form1">
-                <input type="text" ng-model="edit1" />
-            </form>
+            {{data}} <br />
+            <input type="text" ng-model="edit1" />
+            Hello! My name is Alex Paskal. Welcome!
             <button ng-click="FormSubmit()">Submit</button>
-
         </div>
-
         <script src="index/js/app.js"></script>
-        <script>
-            //$.getJSON("index/db.json", function (data) {
-            //console.log(data);
-            //console.log(data.key1);
-            //alert(data.key1);
-
-            //});
-            //function FormSubmit() {
-            //    a += $scope.edit1;
-            //    alert(a);
-            //    alert(b);
-            //}
-        </script>
-
 	</body>
 </html>
