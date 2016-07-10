@@ -5,17 +5,34 @@
 		<title>AlexPaskal's site</title>
         <script src="index/js/lib/angular.min.js"></script>
         <script src="index/js/lib/jquery-3.0.0.min.js"></script>
+        <script src="index/js/lib/taffy.min.js"></script>
     </head>
-	<body ng-controller="AppCtrl">
-        <script>
-            $.getJSON("index/db.json", function (data) {
-                console.log(data);
-                console.log(data.key1);
-                alert(data.key1);
+	<body>
+        <div ng-controller="AppCtrl">
+            {{he}} <br />
+            {{text}} <br />
+            Hello! My name is Alex Paskal. Welcome! <span id="span1"></span>
+            <form id="form1">
+                <input type="text" ng-model="edit1" />
+            </form>
+            <button ng-click="FormSubmit()">Submit</button>
 
-            });
-        </script>
-		Hello! My name is Alex Paskal. Welcome! {{he}}
+        </div>
+
         <script src="index/js/app.js"></script>
+        <script>
+            //$.getJSON("index/db.json", function (data) {
+            //console.log(data);
+            //console.log(data.key1);
+            //alert(data.key1);
+
+            //});
+            //function FormSubmit() {
+            //    a += $scope.edit1;
+            //    alert(a);
+            //    alert(b);
+            //}
+        </script>
+
 	</body>
 </html>
